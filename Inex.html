@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI - Revolucionando el Desarrollo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="JAVA/Cambio_Tema.js">
+    <link rel="stylesheet" href="CSS/Estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cursor AI</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#impact">Impacto</a></li>
+                <li><a href="#future">Futuro</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero-section">
+        <div class="container">
+            <h1>Cursor AI</h1>
+            <p>El futuro del desarrollo de software impulsado por IA</p>
+            <a href="https://cursor.sh" target="_blank" class="cta-button">Prueba Cursor Ahora</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Características Principales</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Generación de Código Inteligente</h3>
+                        <p>Genera código basado en descripciones en lenguaje natural.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-comment-alt"></i>
+                        <h3>Explicación de Código</h3>
+                        <p>Obtén explicaciones detalladas de cualquier fragmento de código.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Refactorización Automática</h3>
+                        <p>Mejora la calidad de tu código con sugerencias inteligentes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bug"></i>
+                        <h3>Depuración Asistida por IA</h3>
+                        <p>Identifica y resuelve errores más rápidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="impact">
+            <div class="container">
+                <h2>Impacto en el Desarrollo</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Aumento significativo en la productividad</li>
+                    <li><i class="fas fa-check"></i> Reducción del tiempo de depuración</li>
+                    <li><i class="fas fa-check"></i> Facilita el aprendizaje de nuevas tecnologías</li>
+                    <li><i class="fas fa-check"></i> Mejora la calidad del código</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="future" class="future">
+            <div class="container">
+                <h2>El Futuro con Cursor AI</h2>
+                <p>Cursor AI está a la vanguardia de una nueva era en la programación, ofreciendo una colaboración más profunda entre desarrolladores e IA, personalización avanzada y una revolución en la forma de crear software.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cursor AI. Revolucionando el desarrollo de software, un código a la vez.</p>
+        </div>
+    </footer>
+
+    <script src="JAVA/Cambio_Tema.js"></script>
+    <div class="custom-cursor"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('header');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
